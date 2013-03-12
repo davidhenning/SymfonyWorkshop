@@ -1,0 +1,14 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Welcome, {{ name }} | Training Application
+{% endblock %}
+
+{% block body %}
+    <h1>Training Application</h1>
+    <p>Greetings, {{ name }}!</p>
+
+    <p><a href="{{ path('greet', {name: 'Me'}) }}">Greet Me!</a></p>
+{% endblock %}
+
+
